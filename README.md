@@ -25,7 +25,7 @@ Install by running: `vim +PlugInstall` or run the command from vim.
 ## Pathogen
 see: https://github.com/tpope/vim-pathogen
 
-Include `execute pathogen#infect()` in vimrc to include the plugins found in the
+Include `call pathogen#infect()` in vimrc to include the plugins found in the
 bundle directory.
 
 Add new pathogen plugins by running: `git submodule add <source url>
@@ -38,6 +38,5 @@ bundle/<plugin name>` as opposed to cloning. To update a single plugin:
 
 To update all bundled plugins: `git submodule foreach git pull origin master`
 
-[YouCompleteMe](https://github.com/ycm-core/YouCompleteMe).
-Because YouCompleteMe has a build step, see documentation for advanced
-installation instructions.
+Because [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) has a build
+step, see documentation for advanced installation instructions.
