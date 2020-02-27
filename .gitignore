@@ -1,0 +1,8 @@
+# ignore the netrw (vim's native file explorer) history file
+.netrwhist
+
+# ignore vim-plug plugins
+plugged/**
+
+# ignore reserve directory
+reserve/**
