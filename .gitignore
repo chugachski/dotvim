@@ -4,5 +4,8 @@
 # ignore vim-plug plugins
 plugged/**
 
+# ignore YouCompleteMe
+bundle/YouCompleteMe
+
 # ignore reserve directory
 reserve/**
