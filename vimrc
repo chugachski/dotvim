@@ -1,4 +1,4 @@
-" plugins expect bash - not fish, zsh, etc
+" plugins expect bash, not fish, zsh, etc
 set shell=bash
 
 " vim-plug package manager
@@ -20,6 +20,7 @@ call pathogen#helptags()
 " set colorscheme
 " see: https://github.com/morhetz/gruvbox
 colorscheme gruvbox
+" set t_ut= " for the benefit of tmux
 
 " change map leader (<leader>) to ','
 let mapleader=","
@@ -33,6 +34,9 @@ set hidden
 " move .swp files to /tmp
 set directory=/tmp
 
+" remember 50 commands
+set history=50
+
 " change the key used to exit insert mode
 inoremap jk <ESC>
 
@@ -45,7 +49,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 " open nerdtree menu
 nnoremap <leader>nt :NERDTreeToggle<Enter>
 " nerdtree find
-nnoremap <silent> <Leader>nf :nf<CR>
+nnoremap <silent> <Leader>nf :NERDTreeFind<CR>
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
