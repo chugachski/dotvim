@@ -37,11 +37,20 @@ set directory=/tmp
 " remember 50 commands
 set history=50
 
+" vim-ruby-minitest i_CTRL-X_CTRL-U completion
+set completefunc=syntaxcomplete#Complete
+
 " change the key used to exit insert mode
 inoremap jk <ESC>
 
 " shortcut to rapidly toggle `set list` (show invisibles)
 nmap <leader>l :set list!<CR>
+
+" set tabstop=8 softtabstop=0 shiftwidth=8 noexpandtab "default vim settings
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab "default values
+
+" use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬,trail:∙,nbsp:•
 
 " shortcut to open vimrc file
 nmap <leader>v :tabedit $MYVIMRC<CR>
@@ -60,12 +69,6 @@ nmap <C-Down> ]e
 " bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
-
-" use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬,trail:∙,nbsp:•
-
-" set tabstop=8 softtabstop=0 shiftwidth=8 noexpandtab "default vim settings
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab "default values
 
 " formatting options
 au FileType * set formatoptions-=o " do not insert a comment leader after hitting 'o' or 'O'
